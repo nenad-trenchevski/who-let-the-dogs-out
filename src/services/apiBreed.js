@@ -20,9 +20,8 @@ const req = type => {
     return config;
 };
 
+
+// TODO: Add this in another constants file
 const METHOD_TYPES = {
-    GET: 'GET',
-    POST: 'POST',
-    PUT: 'PUT',
-    DELETE: 'DELETE' 
+    GET: 'GET'
 };
