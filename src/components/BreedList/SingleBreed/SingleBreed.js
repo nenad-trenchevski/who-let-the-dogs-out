@@ -1,9 +1,9 @@
 import React from 'react';
 import './SingleBreed.scss';
 
-function SingleBreed() {
+function SingleBreed(props) {
   return (
-      <div>Pikinezer</div>
+      <div>{props.aBreed}</div>
   );
 }
 
