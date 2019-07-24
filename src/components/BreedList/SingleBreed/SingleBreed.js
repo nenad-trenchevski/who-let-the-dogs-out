@@ -3,9 +3,7 @@ import './SingleBreed.scss';
 
 function SingleBreed() {
   return (
-    <div>
-        <div>breed name goes here</div>
-    </div>
+      <div>Pikinezer</div>
   );
 }
 
