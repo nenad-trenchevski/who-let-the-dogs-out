@@ -20,5 +20,5 @@ export const CONSTANTS = {
 
 
 export const initialState = {
-    url: null
+    url: 'affenpinscher'
 };

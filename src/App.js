@@ -14,6 +14,7 @@ const CLASS_NAMES = {
 
 const App = () => {
     const [urlData, dispatch] = useReducer(breedReducer, initialState);
+
     return (
         <div className={CLASS_NAMES.MAIN_LAYOUT_CONTAINER}>
             <BreedContext.Provider value={{ urlData, dispatch }}>

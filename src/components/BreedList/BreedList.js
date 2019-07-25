@@ -17,6 +17,7 @@ const CLASS_NAMES = {
 const BreedList = () => {
     const [menu, menuToggle] = useState(true);
     const menuArrow = 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_left_48px-512.png';
+    // Create req object
     const breedList = useEndpoint({
         method: METHOD.GET,
         url: `${API.ALL_BREEDS}`
@@ -26,13 +27,15 @@ const BreedList = () => {
         <div className={CLASS_NAMES.MENU_CONTAINER}>
             <div
                 className={menu ? CLASS_NAMES.OPEN_MENU : CLASS_NAMES.BREED_LIST}>
-                {(breedList.pending && PROCCESS_MSG.LOADING)
+                {
+                    (breedList.pending && PROCCESS_MSG.LOADING)
                     || (breedList.error && PROCCESS_MSG.STH_HAPPENED)
                     || (breedList.complete && Object.keys(breedList.data.message)
-                        .map((breed, index) => <SingleBreed key={index} aBreed={breed} />))}
+                        .map((breed, index) => <SingleBreed key={index} aBreed={breed} />))
+                }
             </div>
             <img src={menuArrow}
-                alt="arrow"
+                alt='arrow'
                 onClick={() => menuToggle(!menu)}
                 className={CLASS_NAMES.HAMBURGER_MENU + (menu ? CLASS_NAMES.OPENED : CLASS_NAMES.CLOSED)} />
         </div>

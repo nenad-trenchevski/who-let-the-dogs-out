@@ -14,11 +14,11 @@ const setBreedType = (breedType) => {
 };
 
 const BreedImageHolder = () => {
+    // Call the endpoint with a appropriate breed type
     const { urlData } = useContext(BreedContext);
-    const endpoint = urlData.url ? urlData.url : 'affenpinscher';
     const currentBreed = useEndpoint({
         method: METHOD.GET,
-        url: setBreedType(endpoint)
+        url: setBreedType(urlData.url)
     });
 
     return (

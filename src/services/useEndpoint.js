@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+// Send request, return response
 const useEndpoint = (req) => {
     const [res, setRes] = useState({
         data: null,
@@ -8,7 +9,6 @@ const useEndpoint = (req) => {
         pending: false,
         error: false
     });
-
     useEffect(() => {
         setRes({
             data: null,
