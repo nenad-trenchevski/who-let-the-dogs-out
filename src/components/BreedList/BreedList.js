@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './BreedList.scss';
+import arrow from '../../assets/arrow.png';
 import { API, METHOD, PROCCESS_MSG } from '../../services/constants';
 
 import useEndpoint from '../../services/useEndpoint';
@@ -16,7 +17,6 @@ const CLASS_NAMES = {
 
 const BreedList = () => {
     const [menu, menuToggle] = useState(true);
-    const menuArrow = 'https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_left_48px-512.png';
     // Create req object
     const breedList = useEndpoint({
         method: METHOD.GET,
@@ -34,7 +34,7 @@ const BreedList = () => {
                         .map((breed, index) => <SingleBreed key={index} aBreed={breed} />))
                 }
             </div>
-            <img src={menuArrow}
+            <img src={arrow}
                 alt='arrow'
                 onClick={() => menuToggle(!menu)}
                 className={CLASS_NAMES.HAMBURGER_MENU + (menu ? CLASS_NAMES.OPENED : CLASS_NAMES.CLOSED)} />
