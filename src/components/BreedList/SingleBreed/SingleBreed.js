@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleBreed.scss';
 
-function SingleBreed(props) {
+const SingleBreed = (props) => {
   return (
       <div>{props.aBreed}</div>
   );

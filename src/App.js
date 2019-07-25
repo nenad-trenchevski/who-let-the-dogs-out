@@ -1,13 +1,20 @@
 import React from 'react';
-import Home from './pages/Home/Home';
+//Components
+import BreedList from './components/BreedList/BreedList';
+import BreedImageHolder from './components/BreedImageHolder/BreedImageHolder';
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-        <Home />
-    </div>
-  );
+const CLASS_NAMES = {
+    MAIN_LAYOUT_CONTAINER: 'main-layout-container'
+}
+
+const App = () => {
+    return (
+        <div className={CLASS_NAMES.MAIN_LAYOUT_CONTAINER}>
+            <BreedList />
+            <BreedImageHolder />
+        </div>
+    );
 }
 
 export default App;
