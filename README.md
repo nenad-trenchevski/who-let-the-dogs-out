@@ -8,7 +8,7 @@ No dependencies (other than [NodeJS](https://nodejs.org/)) are required on the h
 2. In the terminal, go to root folder of the source (the folder containing this readme)
 3. Run the following command from the terminal in order to install the necessary dependencies:
 ```
-npm-install
+npm install
 ```
 4. Wait a few seconds
 5. To start the development server, run the following command:
