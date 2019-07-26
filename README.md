@@ -19,7 +19,7 @@ npm start
 7. You should now be able to see the application running (at localhost:3000)
 
 ## Creating a Production Build
-1. Running 'npm run build' creates a build directory with a production build of your app
+1. Running 'npm run build' creates a build directory with a production build of the app
 
 ## Testing the App
 1. To be continued...
