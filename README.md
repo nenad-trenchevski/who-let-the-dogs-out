@@ -34,7 +34,7 @@ docker build -t sample:dev .
 ```
 docker run -v ${PWD}:/app -v /app/node_modules -p 3001:3000 --rm sample:dev
 ```
-4. You should now be able to see the application running (at http://localhost:3001/)
+4. You should now be able to see the application running (at http://localhost:3001/) - tested on Ubuntu
 
 ## Testing the App
 1. To run the test, execute the following command:
