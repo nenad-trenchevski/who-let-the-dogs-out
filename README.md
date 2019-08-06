@@ -1,3 +1,6 @@
+## NOTE
+Some code is added only for demonstrating purposes, and might not be suitable for a real-world application
+
 ## Instructions
 The development server can be run locally using NPM. This allows testing of the application's code locally.
 
@@ -21,5 +24,19 @@ npm start
 ## Creating a Production Build
 1. Running 'npm run build' creates a build directory with a production build of the app
 
+## Docker
+1. Ensure that Docker is installed on the host PC
+2. To build and tag the Docker image use the following command:
+```
+docker build -t sample:dev .
+```
+3. To create a new container instance from the image created above, run
+```
+docker run -v ${PWD}:/app -v /app/node_modules -p 3001:3000 --rm sample:dev
+```
+4. You should now be able to see the application running (at http://localhost:3001/)
+
 ## Testing the App
-1. To be continued...
+1. To run the test, execute the following command:
+```
+npm test -- {theSpecFileYouWantToRun}
