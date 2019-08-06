@@ -8,7 +8,7 @@ No dependencies (other than [NodeJS](https://nodejs.org/)) are required on the h
 2. In the terminal, go to root folder of the source (the folder containing this readme)
 3. Run the following command from the terminal in order to install the necessary dependencies:
 ```
-npm-install
+npm install
 ```
 4. Wait a few seconds
 5. To start the development server, run the following command:
@@ -19,7 +19,7 @@ npm start
 7. You should now be able to see the application running (at localhost:3000)
 
 ## Creating a Production Build
-1. Running 'npm run build' creates a build directory with a production build of your app
+1. Running 'npm run build' creates a build directory with a production build of the app
 
 ## Testing the App
 1. To be continued...
